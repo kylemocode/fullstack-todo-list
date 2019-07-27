@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({ extended: true }))
 app.use(cors());
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 //router
 app.use('/todos', require('./routes/todo'));
