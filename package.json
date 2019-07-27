@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha --timeout 10000",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,9 @@
     "express": "^4.17.1",
     "mocha": "^6.2.0",
     "mongodb": "^3.3.0-beta2",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
   }
 }
