@@ -63,5 +63,9 @@ URL: https://alfred-todo-list.herokuapp.com/
 
 前端部分是用react開發，本來要試著使用context api的，但因為快到繳交作業的期限了所以最後沒有使用。這次做這個作品嘗試都使用functional component 搭配 react hook ，幾乎沒有用到class based的component，但也因此踩了一些坑，讓state的更新出了一點小問題，因此最後的成品在刪除與新增後不會自動重新渲染(已經想到解法，但時間來不及)。總之前端因為時間不足完成的有點草率與粗略，UI也沒有經過事先設計，目前自己計畫將UI重新設計後，重新更改程式架構，加入context API，渲染加入一些基本動畫，如果您願意看看之後的成果，我很樂意在完成後通知您，讓您看看完整的作品。
 
+2019/07/28 補充  
+
+後來自己利用一些時間改寫了一下，引入了context api，有了global state的機制，畫面也會在新增刪除時自動渲染，只是目前整體使用者體驗不是太好，日後會將這個做為side project慢慢改進。
+
 
     
