@@ -1,12 +1,14 @@
-import React,{useState} from 'react';
+import React,{useState,useContext} from 'react';
 import axios from 'axios';
-
+import { TodoContext } from '../contexts/TodoContext';
+import { addTodo } from '../actions/todosAction';
 
 
 export default function AddTodoForm(props) {
 
     const [item, setItem] = useState("");
     const [author, setAuthor] = useState("")
+    const { dispatch } = useContext(TodoContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -15,7 +17,10 @@ export default function AddTodoForm(props) {
             author
         })
         .then((res) => {
-            alert("新增成功,請重整頁面")
+            dispatch(addTodo({
+                item,
+                author
+            }))
         })
         .catch((err) => console.log('something wrong'))
         

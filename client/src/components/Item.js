@@ -1,7 +1,10 @@
-import React from 'react';
+import React,{ useContext } from 'react';
 import axios from 'axios';
+import { TodoContext } from '../contexts/TodoContext';
+import { removeTodo } from '../actions/todosAction';
 
 const Item = (props) => {
+    const { dispatch } = useContext(TodoContext);
     const cardStyle={
         fontFamily: "微軟正黑體",
         display: "flex",
@@ -11,7 +14,7 @@ const Item = (props) => {
     
     const handleDelete = () => {
         axios.delete(`todos/delete/${props.id}`)
-            .then(() => alert("刪除成功,請重整畫面"))
+            .then(() => dispatch(removeTodo(props.id)))
     }
 
     return (

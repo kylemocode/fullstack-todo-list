@@ -1,12 +1,14 @@
-import React, { useEffect,useState } from 'react';
+import React, { useContext } from 'react';
 import Item from '../components/Item.js';
+import { TodoContext } from '../contexts/TodoContext';
 
-const ItemLists  = (props) => {
+const ItemLists  = () => {
      
-
+    const { todos } = useContext(TodoContext);
+    // console.log(todos)
     return (
         <div>
-            {props.todos.length? props.todos.map((todo) => {
+            {todos.length? todos.map((todo) => {
                 return <Item key={todo._id} id={todo._id} item={todo.item} author={todo.author}/>
             }): <p>loading...</p>}
             
