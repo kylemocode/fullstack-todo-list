@@ -13,8 +13,8 @@ const Navbar = () => {
     }
     return (
         <div className="container-fluid" style={navbarStyle}>
-            <img src="https://i.imgur.com/NVHjdWC.png" style={{width: "60px",height: "60px",marginRight: "20px"}}/>
-            <h3 style={{marginTop: "0px",marginLeft: "15px",marginBottom: "0px",fontWeight: "bold"}}>Alfred TODO LIST</h3>
+            <img src="https://s3-ap-northeast-1.amazonaws.com/www.memepr.com/smartQA/group_689.png" style={{width: "70px",height: "50px",marginRight: "20px"}}/>
+            <h3 style={{marginTop: "0px",marginLeft: "15px",marginBottom: "0px",fontWeight: "bold"}}>Oldmo's TODO LIST</h3>
         </div>
     )
 }
