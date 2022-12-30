@@ -18,7 +18,7 @@
     "chai-http": "^4.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "mongodb": "^3.3.0-beta2",
     "nodemon": "^1.19.1",
     "react-redux": "^7.1.0",
