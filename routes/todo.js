@@ -4,7 +4,7 @@ const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectID;
 
 // db variables
-const CONNECTTION_URL = 'mongodb+srv://oldmo86617:_oo0981833393@cluster0-xkrt7.mongodb.net/test?retryWrites=true&w=majority';
+const CONNECTTION_URL = 'mongodb+srv://@cluster0-xkrt7.mongodb.net/test?retryWrites=true&w=majority';
 const DATABASE_NAME = "todolist";
 var database, collection;
 
